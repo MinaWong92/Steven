@@ -1,0 +1,26 @@
+import matplotlib.pyplot as plt
+
+def create_line_chart():
+    # Data for x-axis (time)
+    time = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+    # Data for y-axis (values)
+    values = [3, 5, 9, 2, 8, 4, 7, 1, 6, 10]
+
+    # Create the line chart
+    plt.plot(time, values, marker='o')
+
+    # Set chart title and labels
+    plt.title("Line Chart Example")
+    plt.xlabel("Time")
+    plt.ylabel("Values")
+
+    # Display the chart
+    plt.show()
+
+def main():
+    print("Creating a Line Chart...")
+    create_line_chart()
+
+if __name__ == '__main__':
+    main()
